@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">መልሕቅ</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/posts']">ዋና ገጽ <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ኦድዮ ቪዝዋል</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/posts/add']">አዲስ ጦማር</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="የምትፈልገውን ፈልግ" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">ፈልግ</button>
+    </form>
+    <div class="btn-group ml-4" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-outline-text" (click)="register()">ተመዝገብ</button>
+  <button type="button" class="btn btn-outline-text" (click)="login()">ግባ</button>
+</div>
+  </div>
+</nav>

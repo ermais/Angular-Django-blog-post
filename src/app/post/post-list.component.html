@@ -1,0 +1,23 @@
+<div class="container">
+<div class="row">
+<div class="col-md-2">
+</div>
+<div  class="col-md-8" >
+<div class="row" *ngFor="let post of posts">
+<div class="card" style="width: 100%">
+  <div class="card-body">
+    <h5 class="card-title text-capitalize"><a [routerLink]="['/posts',post.slug]">{{post.title}}</a></h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{post.pub_date |date}}</h6>
+    <p class="card-text">{{post.body}}</p>
+                <div *ngFor="let c of post?.comment_set">
+                    <p>{{c?.body}}</p>
+                </div>
+    <comment [postId]="post.id" ></comment>
+    <a href="#" class="card-link">see more</a>
+    <a href="#" class="card-link">share</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>

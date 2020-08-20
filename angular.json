@@ -24,9 +24,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "bpost"
+    }
+  },
+  "defaultProject": "bpost",
+  "cli": {
+    "analytics": "7b483dc6-11eb-4528-919c-ad620b888800"
+  }
 }

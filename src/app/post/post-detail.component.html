@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+            <div class="card" style="width: 100%">
+            <div class="card-body">
+                <h5 class="card-title text-capitalize">{{post?.title}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{post?.pub_date}}</h6>
+                <p class="card-text">{{post?.body}}</p>
+            </div>
+                <div *ngFor="let comment of post.comment_set">
+                    <p>{{comment.body}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+</div>
