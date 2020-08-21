@@ -24,9 +24,15 @@ export class PostService {
             "user": 4
         },
             {
-                headers: new HttpHeaders({ 'Content-type': 'application/json' })
+                headers: new HttpHeaders({ 'Content-Type': 'application/json' })
             }
         );
+    }
+
+    updatePost(slug:string, update) : Observable<any> {
+        return this.http.put(`/api/posts/${slug}/edit/`, update, {
+            headers:new HttpHeaders({'Content-Type':'application/json'})
+        })
     }
 
     commentPost(comment):Observable<any> {

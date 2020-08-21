@@ -13,6 +13,7 @@
                     <p>{{c?.body}}</p>
                 </div>
     <comment [postId]="post.id" ></comment>
+    <a [routerLink]="['/posts/',post.slug,'edit']" >edit</a>
     <a href="#" class="card-link">see more</a>
     <a href="#" class="card-link">share</a>
   </div>
