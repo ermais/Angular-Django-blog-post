@@ -10,9 +10,11 @@ import { PostModule } from "./post/post.module";
 
 import { NavbarComponent } from "./navbar/navbar.component";
 import { AppComponent } from './app.component';
+import { CommonModule, DatePipe } from '@angular/common';
 
 @NgModule({
   imports: [
+    CommonModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
@@ -29,7 +31,7 @@ import { AppComponent } from './app.component';
     AppComponent,
     NavbarComponent
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

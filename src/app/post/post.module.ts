@@ -9,10 +9,12 @@ import { CommentComponent } from './common/comment.component'
 
 import { PostService } from '../service/post.service';
 import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
     imports: [
+        BrowserModule,
         CommonModule,
         ReactiveFormsModule,
         RouterModule.forChild([
@@ -37,6 +39,7 @@ import { CommonModule } from '@angular/common';
     declarations: [
         PostAddComponent,
         PostListComponent,
+        PostDetailComponent,
         CommentComponent
     ],
     providers: [
